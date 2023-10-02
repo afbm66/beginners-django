@@ -26,7 +26,7 @@ SECRET_KEY = '_*&5c@1153xw6=489*2*=&*%=4)8f^m54kb@3ca-cb(wm%b@wm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['als-sp2324.azurewebsites.net']
+ALLOWED_HOSTS = ['al-sp2324.azurewebsites.net']
 
 
 # Application definition
@@ -82,16 +82,10 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'django',
-        'USER': 'afbm@als-sp2324-db',
-        'PASSWORD': os.getenv("DB_PASSWORD"),
-        'HOST': 'als-sp2324.azurewebsites.net',
-        'PORT': '5432',
-        'OPTIONS': {'sslmode': 'require'}
-    }
+    
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3'
+        'NAME': BASE_DIR / 'db.sqlite3',
+        }
 }
 
 
