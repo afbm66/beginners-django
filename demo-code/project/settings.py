@@ -26,7 +26,7 @@ SECRET_KEY = '_*&5c@1153xw6=489*2*=&*%=4)8f^m54kb@3ca-cb(wm%b@wm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['al-sp2324.azurewebsites.net']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','als-sp2324.azurewebsites.net']
 
 
 # Application definition
@@ -82,7 +82,6 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default': {
-    
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
         }
