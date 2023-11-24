@@ -41,6 +41,12 @@ steps:
     pip install unittest-xml-reporting
   displayName: 'Install prerequisites'
 
+# Solución sugerida por Chat GPT para eliminar el error "Missing staticfiles..."
+- script: |
+  python manage.py collectstatic --noinput
+displayName: 'Collect static files'
+
+
 - script: |
     pushd '$(projectRoot)'
     python manage.py test --testrunner xmlrunner.extra.djangotestrunner.XMLTestRunner --no-input
