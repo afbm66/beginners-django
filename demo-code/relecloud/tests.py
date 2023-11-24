@@ -6,7 +6,7 @@ from django.urls import reverse
 class ViewsTest(TestCase):
     def test_home_view(self):
         # Test that the home view returns a 200 status code and contains the expected content
-        response = self.client.get(reverse('home'))
+        response = self.client.get(reverse('index'))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'Welcome to My Site')
 
