@@ -43,6 +43,8 @@ steps:
 
 # Solución sugerida por Chat GPT para eliminar el error "Missing staticfiles..."
 - script: |
+    echo "Current directory: $(pwd)"
+    ls  # List files in the current directory
     python manage.py collectstatic --noinput
   displayName: 'Collect static files'
 
