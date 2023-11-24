@@ -45,7 +45,7 @@ steps:
 - script: |
     echo "Current directory: $(pwd)"
     ls  # List files in the current directory
-    python ./democode/manage.py collectstatic --noinput
+    python ./demo-code/manage.py collectstatic --noinput
   displayName: 'Collect static files'
 
 - script: |
