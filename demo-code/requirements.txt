@@ -4,3 +4,4 @@ crispy-bootstrap4
 whitenoise
 django.db
 psycopg2-binary
+pytest
