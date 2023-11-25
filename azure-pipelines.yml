@@ -53,10 +53,10 @@ steps:
 #     python manage.py collectstatic --noinput
 #   displayName: 'Collect static files'
 
-# - script: |
-#     pushd '$(projectRoot)'
-#     python manage.py test --testrunner xmlrunner.extra.djangotestrunner.XMLTestRunner --no-input
-#   displayName: 'Run tests'
+- script: |
+    pushd '$(projectRoot)'
+    python manage.py test --testrunner xmlrunner.extra.djangotestrunner.XMLTestRunner --no-input
+  displayName: 'Run tests'
 
 # - task: PublishTestResults@2
 #   inputs:
