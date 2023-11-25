@@ -48,7 +48,7 @@ steps:
     pip list
   displayName: 'Install prerequisites'
 
-Solución sugerida por Chat GPT para eliminar el error "Missing staticfiles..."
+# Solución sugerida por Chat GPT para eliminar el error "Missing staticfiles..."
 - script: |
     python manage.py collectstatic --noinput
   displayName: 'Collect static files'
