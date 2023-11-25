@@ -45,6 +45,7 @@ steps:
     # pip install -r ./demo-code/requirements.txt
     pip install -r requirements.txt
     pip install unittest-xml-reporting
+    pip list
   displayName: 'Install prerequisites'
 
 # Solución sugerida por Chat GPT para eliminar el error "Missing staticfiles..."
