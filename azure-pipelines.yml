@@ -27,7 +27,7 @@ steps:
     scannerMode: 'CLI'
     configMode: 'automatic'
     cliProjectKey: 'c8716aa2ef1c2f65480487602e2277d900594d2b'
-  options: ' -X'
+    extraProperties: ' -X'
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '$(PYTHON_VERSION)'
