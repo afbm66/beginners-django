@@ -48,15 +48,15 @@ steps:
     pip list
   displayName: 'Install prerequisites'
 
-# Solución sugerida por Chat GPT para eliminar el error "Missing staticfiles..."
-# - script: |
-#     python manage.py collectstatic --noinput
-#   displayName: 'Collect static files'
+Solución sugerida por Chat GPT para eliminar el error "Missing staticfiles..."
+- script: |
+    python manage.py collectstatic --noinput
+  displayName: 'Collect static files'
 
 - script: |
     pushd '$(projectRoot)'
     # python manage.py test --testrunner xmlrunner.extra.djangotestrunner.XMLTestRunner --no-input
-    python manage.py test relecloud --no-input
+    python manage.py test #  relecloud --no-input
   displayName: 'Run tests'
 
 # - task: PublishTestResults@2
