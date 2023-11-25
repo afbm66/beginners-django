@@ -13,10 +13,14 @@ variables:
   SONAR_ORGANIZATION: 'afbm66'
   SONAR_TOKEN: 'afbm66-1'
 
-#steps:
-# - task: SonarCloudPrepare@1
-#   inputs:
-#     SonarCloud:
+steps:
+- task: SonarCloudPrepare@1
+  inputs:
+    SonarCloud: 'Django-Beginners'
+    organization: '$(afbm66'
+    scannerMode: 'CLI'
+    configMode: 'automatic'
+    cliProjectKey: 
 
 strategy:
   matrix:
