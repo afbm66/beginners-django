@@ -4,7 +4,7 @@ from django.urls import reverse
 # Create your tests here.
 
 class ViewsTest(TestCase):
-    def test_fake_pass(self)
+    def test_fake_pass(self):
         pass
         
     def test_home_view(self):
