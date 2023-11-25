@@ -36,8 +36,12 @@ steps:
       print('##vso[task.setvariable variable=projectRoot]{}'.format(project_location))
 
 - script: |
+    pushd '$(projectRoot)'
+  displayName: 'Change to the working directory'
+- script: |
     python -m pip install --upgrade pip setuptools wheel
-    pip install -r ./demo-code/requirements.txt
+    # pip install -r ./demo-code/requirements.txt
+    pip install -r requirements.txt
     pip install unittest-xml-reporting
   displayName: 'Install prerequisites'
 
@@ -45,11 +49,11 @@ steps:
 - script: |
     echo "Current directory: $(pwd)"
     ls  # List files in the current directory
-    python ./demo-code/manage.py collectstatic --noinput
+    python manage.py collectstatic --noinput
   displayName: 'Collect static files'
 
 - script: |
-    pushd '$(projectRoot)'
+    # pushd '$(projectRoot)'
     python manage.py test --testrunner xmlrunner.extra.djangotestrunner.XMLTestRunner --no-input
   displayName: 'Run tests'
 
