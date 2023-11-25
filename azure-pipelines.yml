@@ -26,7 +26,7 @@ steps:
     organization: '$(afbm66'
     scannerMode: 'CLI'
     configMode: 'automatic'
-    # cliProjectKey: 
+    cliProjectKey: 'c8716aa2ef1c2f65480487602e2277d900594d2b'
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '$(PYTHON_VERSION)'
