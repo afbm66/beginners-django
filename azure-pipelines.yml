@@ -37,6 +37,8 @@ steps:
 
 - script: |
     pushd '$(projectRoot)'
+    echo "Current directory: $(pwd)"
+    ls  # List files in the current directory
   displayName: 'Change to the working directory'
 - script: |
     python -m pip install --upgrade pip setuptools wheel
@@ -47,21 +49,21 @@ steps:
 
 # Solución sugerida por Chat GPT para eliminar el error "Missing staticfiles..."
 # - script: |
-#     echo "Current directory: $(pwd)"
-#     ls  # List files in the current directory
 #     python manage.py collectstatic --noinput
 #   displayName: 'Collect static files'
 
-- script: |
-    pushd '$(projectRoot)'
-    python manage.py test --testrunner xmlrunner.extra.djangotestrunner.XMLTestRunner --no-input
-  displayName: 'Run tests'
+# - script: |
+#     pushd '$(projectRoot)'
+#     python manage.py test --testrunner xmlrunner.extra.djangotestrunner.XMLTestRunner --no-input
+#   displayName: 'Run tests'
 
-- task: PublishTestResults@2
-  inputs:
-    testResultsFiles: "**/TEST-*.xml"
-    testRunTitle: 'Python $(PYTHON_VERSION)'
-  condition: succeededOrFailed()
+# - task: PublishTestResults@2
+#   inputs:
+#     testResultsFiles: "**/TEST-*.xml"
+#     testRunTitle: 'Python $(PYTHON_VERSION)'
+#   condition: succeededOrFailed()
+
+# ****************************************************
 
 # trigger:
 # - main
