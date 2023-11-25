@@ -8,6 +8,16 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
+
+variables:
+  SONAR_ORGANIZATION: 'afbm66'
+  SONAR_TOKEN: 'afbm66-1'
+
+#steps:
+# - task: SonarCloudPrepare@1
+#   inputs:
+#     SonarCloud:
+
 strategy:
   matrix:
     Python311:
