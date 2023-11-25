@@ -9935,7 +9935,7 @@ body {
 }
 
 .display-1, .display-2, .display-3 {
-  font-family: "Elevon", Arial;
+  font-family: "Elevon", Arial, sans-serif;
 }
 
 .nav-link {
