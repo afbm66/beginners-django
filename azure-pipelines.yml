@@ -50,6 +50,7 @@ steps:
 
 # Solución sugerida por Chat GPT para eliminar el error "Missing staticfiles..."
 - script: |
+    pushd '$(projectRoot)'
     python manage.py collectstatic --noinput
   displayName: 'Collect static files'
 
