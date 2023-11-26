@@ -32,7 +32,7 @@ steps:
     #cliProjectKey: 'c8716aa2ef1c2f65480487602e2277d900594d2b'
     cliProjectKey: 'afbm66_Django-Beginners'
     cliProjectName: 'Django-Beginners'
-    # extraProperties: ' -X'
+    extraProperties: ' -X'
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '$(PYTHON_VERSION)'
@@ -85,9 +85,9 @@ steps:
     testRunTitle: 'Python $(PYTHON_VERSION)'
   condition: succeededOrFailed()
 - task: SonarCloudAnalyze@1
-  inputs:
-    SonarCloud: 'Django-Beginners'
-    cliProjectKey: 'c8716aa2ef1c2f65480487602e2277d900594d2b'
+  # inputs:
+  #   SonarCloud: 'Django-Beginners'
+  #   cliProjectKey: 'afbm66_Django-Beginners'
   env:
     SONAR_ORGANIZATION: 'afbm66'
     SONAR_TOKEN: 'afbm66-1'
