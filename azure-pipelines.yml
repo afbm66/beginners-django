@@ -29,13 +29,15 @@ steps:
     organization: '$(SONAR_ORGANIZATION)'
     scannerMode: 'CLI'
     configMode: 'manual'
-    #cliProjectKey: 'c8716aa2ef1c2f65480487602e2277d900594d2b'
     cliProjectKey: 'afbm66_Django-Beginners'
     cliProjectName: 'Django-Beginners'
     cliSources: 'demo-code'
     # extraProperties: ' -X'
     extraProperties: |
       sonar.branch.name=main
+      sonar.sources=.
+      sonar.inclusions=**/*.py,**/*.html,**/*.css
+      sonar.exclusions=**/static/**,**/media/**
   
 - task: UsePythonVersion@0
   inputs:
