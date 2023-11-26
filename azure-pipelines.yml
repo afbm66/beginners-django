@@ -38,6 +38,8 @@ steps:
       sonar.sources=.
       sonar.inclusions=**/*.py,**/*.html,**/*.css
       sonar.exclusions=**/static/**,**/media/**
+      sonar.projectKey=afbm66_Django-Beginners
+      sonar.organization=afbm66
   
 - task: UsePythonVersion@0
   inputs:
