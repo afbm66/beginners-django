@@ -28,7 +28,7 @@ steps:
     SonarCloud: 'Django-Beginners'
     organization: '$(SONAR_ORGANIZATION)'
     scannerMode: 'CLI'
-    configMode: 'automatic'
+    configMode: 'manual'
     cliProjectKey: 'c8716aa2ef1c2f65480487602e2277d900594d2b'
     extraProperties: ' -X'
 - task: UsePythonVersion@0
