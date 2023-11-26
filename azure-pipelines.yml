@@ -21,8 +21,8 @@ strategy:
 
 steps:
 - checkout: self
-  fetchDepth: 1
-  clean: true
+  fetchDepth: 0
+  
 - task: SonarCloudPrepare@1
   inputs:
     SonarCloud: 'Django-Beginners'
