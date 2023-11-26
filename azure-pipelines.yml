@@ -96,7 +96,13 @@ steps:
   inputs:
     SonarCloud: 'Django-Beginners'
     cliProjectKey: 'afbm66_Django-Beginners'
-    extraProperties: ' -X'
+    extraProperties: |
+      sonar.branch.name=main
+      sonar.sources=.
+      sonar.inclusions=**/*.py,**/*.html,**/*.css
+      sonar.exclusions=**/static/**,**/media/**
+      sonar.projectKey=afbm66_Django-Beginners
+      sonar.organization=afbm66
   env:
     SONAR_ORGANIZATION: 'afbm66'
     SONAR_TOKEN: '0852d151c359efa980ca3a01287a76360c00b418'
