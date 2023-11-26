@@ -87,7 +87,7 @@ steps:
 - task: SonarCloudAnalyze@1
   inputs:
     SonarCloud: 'Django-Beginners'
-    cliProjectKey: 'afbm66_Django-Beginners'
+    cliProjectKey: 'afbm66_Django-Beginners_demo-code'
     extraProperties: ' -X'
   env:
     SONAR_ORGANIZATION: 'afbm66'
