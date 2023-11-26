@@ -92,7 +92,6 @@ steps:
   env:
     SONAR_ORGANIZATION: 'afbm66'
     SONAR_TOKEN: '0852d151c359efa980ca3a01287a76360c00b418'
-  workingDirectory: '$(System.DefaultWorkingDirectory)/demo-code'  # Set the working directory to the subfolder
 
 - task: SonarCloudPublish@1
   inputs: 
