@@ -33,7 +33,10 @@ steps:
     cliProjectKey: 'afbm66_Django-Beginners_demo-code'
     cliProjectName: 'Django-Beginners'
     cliSources: 'demo-code'
-    extraProperties: ' -X'
+    # extraProperties: ' -X'
+    extraProperties: |
+      sonar.branch.name=main
+  
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '$(PYTHON_VERSION)'
