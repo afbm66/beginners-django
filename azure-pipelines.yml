@@ -11,7 +11,7 @@ pool:
 
 variables:
   SONAR_ORGANIZATION: 'afbm66'
-  #SONAR_TOKEN: 'afbm66-1'
+  SONAR_TOKEN: '0852d151c359efa980ca3a01287a76360c00b418'
 
 
 strategy:
