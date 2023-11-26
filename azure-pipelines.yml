@@ -11,7 +11,7 @@ pool:
 
 variables:
   SONAR_ORGANIZATION: 'afbm66'
-  SONAR_TOKEN: 'afbm66-1'
+  #SONAR_TOKEN: 'afbm66-1'
 
 
 strategy:
@@ -90,14 +90,14 @@ steps:
   #   cliProjectKey: 'afbm66_Django-Beginners'
   env:
     SONAR_ORGANIZATION: 'afbm66'
-    SONAR_TOKEN: 'afbm66-1'
+    #SONAR_TOKEN: 'afbm66-1'
 
 - task: SonarCloudPublish@1
   inputs: 
     pollingTimeoutSec: '300'
   env:
     SONAR_ORGANIZATION: 'afbm66'
-    SONAR_TOKEN: 'afbm66-1'
+    #SONAR_TOKEN: 'afbm66-1'
 
 # ****************************************************
 
