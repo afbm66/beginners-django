@@ -30,7 +30,7 @@ steps:
     scannerMode: 'CLI'
     configMode: 'manual'
     #cliProjectKey: 'c8716aa2ef1c2f65480487602e2277d900594d2b'
-    cliProjectKey: 'afbm66_Django-Beginners_demo-code'
+    cliProjectKey: 'afbm66_Django-Beginners'
     cliProjectName: 'Django-Beginners'
     cliSources: 'demo-code'
     # extraProperties: ' -X'
@@ -91,7 +91,7 @@ steps:
 - task: SonarCloudAnalyze@1
   inputs:
     SonarCloud: 'Django-Beginners'
-    cliProjectKey: 'afbm66_Django-Beginners_demo-code'
+    cliProjectKey: 'afbm66_Django-Beginners'
     extraProperties: ' -X'
   env:
     SONAR_ORGANIZATION: 'afbm66'
