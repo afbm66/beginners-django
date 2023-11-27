@@ -25,10 +25,10 @@ steps:
   
 - task: SonarCloudPrepare@1
   inputs:
-    SonarCloud: 'Django-Beginners'
+    SonarCloud: 'SC'
     organization: '$(SONAR_ORGANIZATION)'
     scannerMode: 'CLI'
-    configMode: 'manual'
+    configMode: 'automatic'
     cliProjectKey: 'afbm66_Django-Beginners'
     cliProjectName: 'Django-Beginners'
     cliSources: 'demo-code'
