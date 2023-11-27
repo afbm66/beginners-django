@@ -35,7 +35,7 @@ steps:
     # extraProperties: ' -X'
     extraProperties: |
       sonar.branch.name=main
-      sonar.sources=.
+      sonar.sources=./demo-code
       sonar.inclusions=**/*.py,**/*.html,**/*.css
       sonar.exclusions=**/static/**,**/media/**
       sonar.projectKey=afbm66_Django-Beginners
@@ -98,7 +98,7 @@ steps:
     cliProjectKey: 'afbm66_Django-Beginners'
     extraProperties: |
       sonar.branch.name=main
-      sonar.sources=.
+      sonar.sources=./demo-code
       sonar.inclusions=**/*.py,**/*.html,**/*.css
       sonar.exclusions=**/static/**,**/media/**
       sonar.projectKey=afbm66_Django-Beginners
