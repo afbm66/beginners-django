@@ -35,7 +35,7 @@ steps:
     # extraProperties: ' -X'
     extraProperties: |
       sonar.branch.name=main
-      sonar.sources=./demo-code
+      sonar.sources=.
       sonar.inclusions=**/*.py,**/*.html,**/*.css
       sonar.exclusions=**/static/**,**/media/**
       sonar.projectKey=afbm66_Django-Beginners
