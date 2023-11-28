@@ -95,17 +95,17 @@ steps:
 - task: SonarCloudAnalyze@1
   inputs:
     SonarCloud: 'Django-Beginners'
-  #   cliProjectKey: 'afbm66_Django-Beginners'
-  #   extraProperties: |
-  #     sonar.branch.name=main
-  #     sonar.sources=./demo-code
-  #     sonar.inclusions=**/*.py,**/*.html,**/*.css
-  #     sonar.exclusions=**/static/**,**/media/**
-  #     sonar.projectKey=afbm66_Django-Beginners
-  #     sonar.organization=afbm66
-  # env:
-  #   SONAR_ORGANIZATION: 'afbm66'
-  #   SONAR_TOKEN: '0852d151c359efa980ca3a01287a76360c00b418'
+    cliProjectKey: 'afbm66_Django-Beginners'
+    extraProperties: |
+      sonar.branch.name=main
+      sonar.sources=./demo-code
+      sonar.inclusions=**/*.py,**/*.html,**/*.css
+      sonar.exclusions=**/static/**,**/media/**
+      sonar.projectKey=afbm66_Django-Beginners
+      sonar.organization=afbm66
+  env:
+    SONAR_ORGANIZATION: 'afbm66'
+    SONAR_TOKEN: 'slgbl7fbf2lhdbkyf6ijiu6xwiswjgmyxn23jgqqcogu72s4hh7q'
 
 - task: SonarCloudPublish@1
   inputs: 
