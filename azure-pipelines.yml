@@ -105,14 +105,14 @@ steps:
       sonar.organization=afbm66
   env:
     SONAR_ORGANIZATION: 'afbm66'
-    SONAR_TOKEN: 'slgbl7fbf2lhdbkyf6ijiu6xwiswjgmyxn23jgqqcogu72s4hh7q'
+    SONAR_TOKEN: 'kfi5ksvyjovbrxbozzleolsb6pzyaziv7a3zugo4dp6sfp7vzvna'
 
 - task: SonarCloudPublish@1
   inputs: 
     pollingTimeoutSec: '300'
   env:
     SONAR_ORGANIZATION: 'afbm66'
-    SONAR_TOKEN: '0852d151c359efa980ca3a01287a76360c00b418'
+    SONAR_TOKEN: 'kfi5ksvyjovbrxbozzleolsb6pzyaziv7a3zugo4dp6sfp7vzvna'
 
 # ****************************************************
 
