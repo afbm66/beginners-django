@@ -16,11 +16,11 @@ variables:
 
 #Configuración recursos en Azure
 
-  azureSubscription: 'include service connection'
-  appName: 'relealb'
-  resourceGroupName: 'relealb'
-  postgresServer: 'relealb-db.postgres.database.azure.com'
-  databaseName: 'relealb-db'
+  azureSubscription: 'AzureResourcesForISW2'# You need to create a service connection in the project to your subscription and use it here
+  appName: 'relealb' # You include here just the name of the Web application
+  resourceGroupName: 'relealb'  # You include here the resource group associated to the Web application
+  postgresServer: 'relealb-db.postgres.database.azure.com' # You include here the FQDN of the database
+  databaseName: 'relealb-db' # You include just the name of the database
   envName: 'dev'
   pythonVersion: '3.11'
   azureWebApp: 'relealb.azurewebsites.net'
