@@ -10,9 +10,21 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
+#Configuración SonarCloud
   SONAR_ORGANIZATION: 'afbm66'
   SONAR_TOKEN: '0852d151c359efa980ca3a01287a76360c00b418'
 
+#Configuración recursos en Azure
+
+  azureSubscription: 'include service connection'
+  appName: 'relealb'
+  resourceGroupName: 'relealb'
+  postgresServer: 'relealb-db.postgres.database.azure.com'
+  databaseName: 'relealb-db'
+  envName: 'dev'
+  pythonVersion: '3.11'
+  azureWebApp: 'relealb.azurewebsites.net'
+  scriptPath: '$(Build.SourcesDirectory)/scripts'
 
 strategy:
   matrix:
